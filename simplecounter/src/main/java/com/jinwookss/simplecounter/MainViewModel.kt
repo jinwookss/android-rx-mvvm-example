@@ -10,6 +10,10 @@ class MainViewModel {
         return count
     }
 
+    fun getValue(): Int {
+        return count.value!!
+    }
+
     fun setValue(n: Int) {
         count.onNext(n)
     }
